@@ -33,9 +33,9 @@
                             <div class="right-nav">
                                 <!--<span class="search-icon fa fa-search"></span> <form action="#" class="search-form"> <input type="search" placeholder="search now"> <button type="submit"> <i class="fa fa-search"></i> </button> </form> -->
                                 <div class="header-social">
-                                    <a href="#" class="fa fa-facebook"></a>
-                                    <a href="#" class="fa fa-twitter"></a>
-                                    <a href="#" class="fa fa-github"></a>
+                                    {% for social in settings.socials %}
+                                        <a href="{{ social.url }}" class="fa fa-{{ social.name }}"></a>
+                                    {% endfor %}
                                 </div>
                             </div>
                             <nav id="menu" class="d-none d-lg-block">
@@ -61,13 +61,18 @@
                     </div>
                 </div>
             </header>
-            <div class="page-title sp" style="background-image: url( {{ backgroundImage }})">
-                <div class="container text-center">
-                    <h2>{{ title }}</h2>
-                    <p>{{ description }}</p>
+            {% block pageHeader %}
+                <div class="page-title sp" style="background-image: url( {{ backgroundImage }})">
+                    <div class="container text-center">
+                        <h2>{{ title }}</h2>
+                        <p>{{ description }}</p>
+                    </div>
                 </div>
-            </div>
-            {{ content | safe }}
+            {% endblock pageHeader %}
+            {% block content %}
+                {{ content | safe }}
+            {% endblock content %}
+            {% block postContent %}{% endblock postContent %}
             <footer>
                 <div class="footer-top">
                     <div class="container">
