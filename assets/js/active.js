@@ -111,8 +111,8 @@ var document,
             flat.tstSlider = $('.testimonial-slider');
             flat.tstSlider.addClass('owl-carousel');
             flat.tstSlider.owlCarousel({
-                items: 3,
-                autoplay: true,
+                items: 2,
+                autoplay: false,
                 loop: true,
                 margin: 30,
                 dots: false,
@@ -126,10 +126,10 @@ var document,
                         items: 1
                     },
                     768: {
-                        items: 2
+                        items: 1
                     },
                     992: {
-                        items: 3
+                        items: 2
                     }
                 }
             });

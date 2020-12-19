@@ -1,6 +1,6 @@
 {% extends "layouts/simple.njk" %}
 
-{% block postContent %}
+{% block content %}
     <div class="service-area sp">
         <div class="container">
             <div class="row">
@@ -19,6 +19,32 @@
                                     {{ service.data.description }}
                                 </p>
                                 <a href="{{ service.url }}">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block postContent %}
+    <div class="testimonial-area spb">
+        <div class="container">
+            <div class="section-title">
+                <h2>{{ testimonials.title }}</h2>
+                <p>{{ testimonials.description }}</p>
+            </div>
+            <div class="testimonial-slider">
+                {% for testimonial in collections.testimonials %}
+                    <div class="single-slide">
+                        <div class="inner">
+                            <p>{{ testimonial.data.quote}}</p>
+                            <div class="client-info">
+                                <div class="client-data">
+                                    <h4>{{ testimonial.data.name }}</h4>
+                                    <span>{{ testimonial.data.jobTitle }}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
