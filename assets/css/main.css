@@ -356,8 +356,11 @@ iframe {
 }
 
 .slicknav_menu {
-  background-color: #1f2131;
+  background-color: #222538;
   border-bottom: 1px solid #585757;
+  position: fixed;
+  width: 100%;
+  z-index: 84;
 }
 @media only screen and (min-width: 991px) {
   .slicknav_menu {
@@ -370,7 +373,7 @@ iframe {
  ***************************** */
 header {
   background-color: #222538;
-  padding: 18px 0;
+  padding: 18px;
   top: 0;
   position: fixed;
   width: 100%;
@@ -655,6 +658,7 @@ form.search-form button {
 /*****************************
  *   04. service-area
  ***************************** */
+
 .single-service,
 .single-service-2,
 .single-service-3 {
@@ -666,6 +670,11 @@ form.search-form button {
   background-color: #fff;
   border-radius: 7px;
   padding: 30px;
+}
+.single-service a,
+.single-service-2 a,
+.single-service-3 a {
+  color: #2d3666;
 }
 .single-service .inner:hover,
 .single-service-2 .inner:hover,
@@ -1324,6 +1333,7 @@ footer {
   }
 }
 .contact-info .single-info {
+  text-align: center;
   font-size: 16px;
   font-weight: 300;
 }
@@ -1341,7 +1351,6 @@ footer {
 .contact-info .single-info a {
   color: #333;
   display: inline-block;
-  margin-right: 8px;
 }
 
 .contact-form {

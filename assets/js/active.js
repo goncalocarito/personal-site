@@ -111,6 +111,7 @@ var document,
             flat.tstSlider = $('.testimonial-slider');
             flat.tstSlider.addClass('owl-carousel');
             flat.tstSlider.owlCarousel({
+                center: true,
                 items: 2,
                 autoplay: false,
                 loop: true,
