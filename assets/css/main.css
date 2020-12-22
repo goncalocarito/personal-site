@@ -1349,6 +1349,9 @@ footer {
   margin-bottom: 0;
 }
 .contact-info .single-info a {
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
   color: #333;
   display: inline-block;
 }

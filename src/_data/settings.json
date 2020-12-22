@@ -3,11 +3,15 @@
     "socials": [
         {
             "name": "facebook",
-            "url": "https://facebook.com"
+            "url": "https://facebook.com/goncalocarito"
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com"
+            "url": "https://twitter.com/goncalocarito"
+        },
+        {
+            "name": "instagram",
+            "url": "https://instagram.com/goncalocarito"
         }
     ]
 }
