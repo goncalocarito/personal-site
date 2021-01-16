@@ -2,13 +2,13 @@
 layout: "layouts/simple.njk"
 title: "Contact"
 description: "I'm just a click away!"
-backgroundImage: "/assets/img/page-title.jpg"
+backgroundImage: "/assets/img/contact-banner.png"
 ---
 <div class="contact-area">
     <div class="container">
             <div class="contact-info">
                 <div class="single-info">
-                    <h5>Do you want to know more about my services?</h5>
+                    <h5>Do you want to know more about the services provided?</h5>
                     <h5>Or to have a good chat about the sciences of data, computer and cognition?</h5>
                     <h5>Drop me a line!</h5>
                     <p>{{ settings.email }}</p>
@@ -17,7 +17,7 @@ backgroundImage: "/assets/img/page-title.jpg"
                     <h5>Or give a shout on social media!</h5>
                     <h5>
                         {% for social in settings.socials %}
-                            <a href="{{ social.url }}" class="fa fa-{{ social.name }} fa-lg"></a>
+                            <a target="_blank" rel="noopener noreferrer" href="{{ social.url }}" class="fa fa-{{ social.name }} fa-lg"></a>
                         {% endfor %}
                     </h5>
                 </div>

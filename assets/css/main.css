@@ -326,7 +326,7 @@ span {
 .page-title h2 {
   font-size: 50px;
   font-weight: 700;
-  color: #333;
+  color: #fff;
 }
 .page-title p:last-child {
   margin-bottom: 0;
@@ -378,6 +378,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 85;
+  font-weight: 500;
 }
 
 .logo-column a.logo {
@@ -394,7 +395,7 @@ header {
 }
 .nav-column a,
 .nav-column span {
-  color: #7286a0;
+  color: #fff;
   line-height: 25px;
   vertical-align: top;
   cursor: pointer;
@@ -540,7 +541,7 @@ form.search-form button {
  *   02. hero-area
  ***************************** */
 .hero-slider .single-slide {
-  height: 715px;
+  height: 665px;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
@@ -561,6 +562,15 @@ form.search-form button {
   font-weight: 300;
   position: relative;
 }
+
+.hero-slider .single-slide p {
+  color: #fff;
+}
+
+.hero-slider .single-slide h2 {
+  color: #fff;
+}
+
 @media only screen and (max-width: 991px) {
   .hero-slider .single-slide {
     height: auto;
@@ -571,7 +581,7 @@ form.search-form button {
     content: "";
     height: 100%;
     width: 100%;
-    background-color: #f1f4f9;
+    background-color: #4843b4;
     z-index: -1;
     left: 0;
     top: 0;
@@ -711,7 +721,7 @@ form.search-form button {
 .single-service .inner .content p:last-child,
 .single-service-2 .inner .content p:last-child,
 .single-service-3 .inner .content p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 2px;
 }
 .single-service.bordered .inner,
 .bordered.single-service-2 .inner,
@@ -748,7 +758,8 @@ form.search-form button {
 .single-service-2:hover .inner {
   color: #fff;
 }
-.single-service-2:hover .inner .content,
+.single-service-2:hover .inner .content p,
+.single-service-2:hover .inner .content h6,
 .single-service-2:hover .inner .title h4 {
   color: #fff;
 }
@@ -1071,7 +1082,7 @@ form.search-form button {
  ***************************** */
 footer {
   background-color: #272938;
-  color: #7286a0;
+  color: #fff;
   line-height: 24px;
   bottom: 0;
   width: 100%;
@@ -1182,7 +1193,7 @@ footer {
   padding: 25px 0;
 }
 .footer-bottom a {
-  color: #7286a0;
+  color: #fff;
   padding: 0 10px;
 }
 @media only screen and (max-width: 991px) {
@@ -1279,6 +1290,12 @@ footer {
 .about-content a.button {
   margin-top: 15px;
 }
+.about-img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
 
 /*****************************
  *   11. team-area
@@ -1354,6 +1371,9 @@ footer {
   padding-left: 5px;
   color: #333;
   display: inline-block;
+}
+.contact-info .single-info a.button {
+  margin-top: 15px;
 }
 
 .contact-form {
@@ -1674,3 +1694,32 @@ footer {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/*****************************
+ *   16. home
+ ***************************** */
+
+@media only screen and (max-width: 767px) {
+  .home-info {
+    margin-bottom: 30px;
+  }
+}
+.home-info .single-info {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+.home-info .single-info:not(:last-child) {
+  margin-bottom: 20px;
+}
+.home-info .single-info h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7d91aa;
+}
+.home-info .single-info p:last-child {
+  margin-bottom: 0;
+}
+.home-info .single-info a.button {
+  margin-top: 15px;
+}

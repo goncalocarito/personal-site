@@ -6,29 +6,56 @@
             <div class="row">
                 {% for service in collections.services %}
                     <div class="col-lg-4 col-md-6 single-service-2">
-                        <a href="{{ service.url }}">
+                        <a data-toggle="modal" data-target="#{{ service.data.id }}">
                             <div class="inner">
                                 <div class="title">
                                     <div class="icon">
                                         <i class="fa fa-{{ service.data.faIcon }}"></i>
                                     </div>
                                     <h4>
-                                        {{ service.data.title }}</h4>
+                                        {{ service.data.title }}
+                                    </h4>
                                 </div>
                                 <div class="content">
-                                    <p>
-                                        {{ service.data.description }}
-                                    </p>
-                                    <p>
-                                        Read More</>
+                                    {% for line in service.data.shortDescription.lines %}
+                                        <p>
+                                            {{ line }}
+                                        </p>
+                                    {% endfor %}
+                                    <h6>
+                                        <b>Read More</b>
+                                    </h6>
                                 </div>
                             </div>
                         </a>
+                    </div>
+                    <div class="modal" id="{{ service.data.id }}" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">{{ service.data.title }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    {% for line in service.data.longDescription.lines %}
+                                        <p>
+                                            {{ line | safe }}
+                                        </p>
+                                    {% endfor %}
+                                    <h6>
+                                        {{ service.data.callToAction }}
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 {% endfor %}
             </div>
         </div>
     </div>
+
 {% endblock content %}
 
 {% block postContent %}

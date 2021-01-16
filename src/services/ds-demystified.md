@@ -1,5 +1,13 @@
 ---
-title: "Data Science Demystified"
-description: "Is Data Science a buzzword in your company or organization? In this webinar and Q&A, your peers can start understanding what is really Data Science and develop some basic data literacy and a lot more of awareness."
+title: Data Science Demystified Webinar
+shortDescription:
+  lines:
+    - Data Science is only for few companies, and only few people can get their hands on.
+    - These are myths.
 faIcon: "magic"
+id: 1
+longDescription:
+  lines:
+    - Data Science is nowadays a wide-talked activity. </br> It's usually connected with innovation, a lot of investment, and high risk. The ROI is often questionable. It requires highly specialized individuals. Something only for a few companies, something only a few people can get their hands on. </br> <b> These are myths. </b> </br> The benefit of understanding Data Science behind all the myths is of tremendous value for companies and individuals.
+callToAction: "At this webinar, you can explore a simplified view of Data Science: what is data, where does it come from, why is this science important, and how it helps on generating more value for businesses and users."
 ---
