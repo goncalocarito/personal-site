@@ -39,13 +39,25 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
+                                    <h5>
+                                        Description
+                                    </h5>
                                     {% for line in service.data.longDescription.lines %}
                                         <p>
                                             {{ line | safe }}
                                         </p>
                                     {% endfor %}
+                                    <h5>
+                                        Goals
+                                    </h5>
                                     <h6>
                                         {{ service.data.callToAction }}
+                                    </h6>
+                                    <h5>
+                                        Audience
+                                    </h5>
+                                    <h6>
+                                        {{ service.data.audience }}
                                     </h6>
                                 </div>
                             </div>
